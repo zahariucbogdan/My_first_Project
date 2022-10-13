@@ -103,7 +103,6 @@ public class Main {
 }
 
 
-
     public static float sum(float first, float second) {
         float result = first + second;
         return result;
