@@ -82,7 +82,7 @@ public class Main {
         {
             float timeSeconds;
             float mps,kph, mph;
-            int distance = 2000;
+            float distance = 2000;
             float hour = 20;
             float minute = 20;
             float second = 20;
