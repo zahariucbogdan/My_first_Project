@@ -1,37 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        printMyName();}
+        printMyName();
+    }
 
 
-    public static void printMyName(){
+    public static void printMyName() {
 
         System.out.println("Hello");
         System.out.println("Bogdan");
         System.out.println("Hello \nBogdan");
 
-        System.out.println(123 + 234);
-        System.out.println(75 / 3);
-        System.out.println(-5 + 8 * 6);
-        System.out.println((55 + 9) % 9);
-        System.out.println(20 + -3 * 5 / 8);
-        System.out.println(5 + 15 / 3 * 2 - 8 % 3);
-
-// Scrieti care o metoda java pentru fiecare din urmatoarele operatii matematice: adunare, scadere, inmultire, impartire.
-
-    int x = 21;
-    int y = 7;
-
-    float a = sum(x, y);
-        System.out.println(a);
-
-    float b = substract(x, y);
-        System.out.println(b);
-
-    float c = multiply(x, y);
-        System.out.println(c);
-
-    float d = divide(x, y);
-        System.out.println(d);
 
 // Scrieti o metoda java, care sa afiseze urmatorul model:
 
@@ -40,14 +18,6 @@ public class Main {
         System.out.println("J      J     aaaaa      V   V     aaaaa  \n");
         System.out.println("   JJ       a     a       V      a     a \n");
 
-// Scrieti o metoda java, care sa primeasca 3 parametrii de tip numar, si sa returneze media numerelor.
-
-        int a1 = 15;
-        int b1 = 20;
-        int c1 = 45;
-
-        float e = avr(a1, b1, c1);
-            System.out.println(e);
 
 // Scrieti o metoda java, care sa afiseze urmatorul model:
 
@@ -61,10 +31,11 @@ public class Main {
 // Scrieti o metoda java, care sa primeasca ca si parametru un numar, care sa reprezinte temperatura in Fahrenheit, si sa returneze temperatura in Celsius. Formula de calcul este: C = 5/9 * (F -32)
 // sursa ``https://www.javatpoint.com/program-to-convert-fahrenheit-into-celsius``
 
-        { float Fahrenheit, Celsius;
+        {
+            float Fahrenheit, Celsius;
             Fahrenheit = 77;
-            Celsius  = ((Fahrenheit-32)*5)/9;
-            System.out.println("Temperature in celsius is: "+Celsius);
+            Celsius = ((Fahrenheit - 32) * 5) / 9;
+            System.out.println("Temperature in celsius is: " + Celsius);
         }
 //  Scrieti o metoda java, care sa primeasca ca si parametru un numar real, care sa reprezinte distanta in inch, si sa returneze distanta in metrii
 
@@ -81,51 +52,29 @@ public class Main {
 
         {
             float timeSeconds;
-            float mps,kph, mph;
+            float mps, kph, mph;
             float distance = 2000;
             float hour = 20;
             float minute = 20;
             float second = 20;
             // Calculate
-            timeSeconds = (hour*3600) + (minute*60) + second;
+            timeSeconds = (hour * 3600) + (minute * 60) + second;
             mps = distance / timeSeconds;
-            kph = ( distance/1000.0f ) / ( timeSeconds/3600.0f );
+            kph = (distance / 1000.0f) / (timeSeconds / 3600.0f);
             mph = kph / 1.609f;
             // Show the data
-            System.out.println("Your speed in meters/second is "+mps);
-            System.out.println("Your speed in km/h is "+kph);
-            System.out.println("Your speed in miles/h is "+mph);
+            System.out.println("Your speed in meters/second is " + mps);
+            System.out.println("Your speed in km/h is " + kph);
+            System.out.println("Your speed in miles/h is " + mph);
 
 
         }
 
 
-}
-
-
-    public static float sum(float first, float second) {
-        return first + second;
-    }
-    public static float substract(float first, float second){
-        return first - second;
     }
 
 
-    public static float multiply(float first, float second){
-        return first * second;
-    }
-
-
-    public static float divide(float first, float second){
-        return first / second;
-        }
-
-
-    public static float avr(float a1, float b1, float c1) {
-        return (a1 + b1 + c1)/3;
-    }
-
-    public static class Main1 {
+    public static class main {
         public static void main(String[] args) {
             //if the text input is "FastTrack", print: "Learning comparison", if not, print :"Got to try more"
             LogicalOperation op = new LogicalOperation();
@@ -140,18 +89,26 @@ public class Main {
 
 
             //Given a text input and a number input,if the text is equal to "FastTrack" AND the number is
-            //equal to or lower than 3, print the number and the text, in this order. If the text is not "FastTrack"
-            //AND the number is equal to or higher than 4, print the number&text in this order.
+            //equal to or lower than 5, print the number and the text, in this order. If the text is not "FastTrack"
+            //AND the number is equal to or higher than 7, print the number&text in this order.
 
             String textInput2 = "FastTrack";
             int numberInput = 5;
 
             System.out.println(op.textAndNumberComparison(textInput2, numberInput));
+
+
+
+
         }
+
+
     }
-
-
-
-
 }
+
+
+
+
+
+
 
