@@ -1,25 +1,32 @@
 package AnimalRescue;
 
 public class AppMain {
+    public static void main(String[] args){
     Dog Rocky = new Dog();
+    Rocky.setname("Rocky");
+    Rocky.setage(2);
+    Rocky.setbreed("Bichon");
+    Rocky.setweight(2);
+    Rocky.setgender("Male");
+    Rocky.setsize("Small");
+    Rocky.setcolor("White");
+    Rocky.sethealth_level("8");
 
-    {
-        System.out.println("The dog name is: " + Rocky.name);
-        System.out.println("The dog age is: " + Rocky.age + "years");
-        System.out.println("The dog weight is: " + Rocky.weight + "kg");
-        System.out.println("The dog size is: " + Rocky.size);
-        System.out.println("The dog breed is: " + Rocky.breed);
-        System.out.println("The dog color is: " + Rocky.color);
-        System.out.println("The dog level of health is: " + Rocky.health_level);
-        System.out.println("The dog level of hunger is: " + Rocky.hunger_level);
-        System.out.println(" The dog mood level is: " + Rocky.mood_level);
-        System.out.println("The dog favorite food is: " + Rocky.favorite_food);
-        System.out.println("The dog favorite recreational activity is: " + Rocky.recreational_activity);
-        Rocky.run();
-        Rocky.eat();
-        Rocky.speak();
-        Rocky.sleep();
-        Rocky.play();
+
+        System.out.println("The dog name is: " + Rocky.getname());
+        System.out.println("The dog age is: " + Rocky.getage() + " years");
+        System.out.println("The dog weight is: " + Rocky.getweight() + " kg");
+        System.out.println("The dog size is: " + Rocky.getsize());
+        System.out.println("The dog breed is: " + Rocky.getbreed());
+        System.out.println("The dog gender is: " + Rocky.getgender());
+        System.out.println("The dog color is: " + Rocky.getcolor());
+        System.out.println("The dog level of health is: " + Rocky.gethealth_level());
+        System.out.println("The dog favorite recreational activity is: " + Rocky.getRecreational_activity);
+        Rocky.getRun();
+        Rocky.getEat();
+        Rocky.getSpeak();
+        Rocky.getSleep();
+        Rocky.getPlay();
 
 
     }

@@ -1,22 +1,70 @@
 package AnimalRescue;
 
 public class Dog {
-    String name = "Rocky";
-    int age = 2;
-    String breed = "Bichon";
-    double weight = 7;
-    String gender = "Male";
-    String size = "Small";
-    String color = "White";
-    double health_level  = 7;
-    double hunger_level = 8;
-    double mood_level= 9;
+    private String name;
+    private int age;
+    private String breed;
+    private int weight;
+    private String gender;
+    private String size;
+    private String color ;
+    private String health_level;
+
     String favorite_food = "Royal Canin";
     String recreational_activity = "Park walk";
 
 
+    public void setname(String name){
+        this.name = name;
+    }
+    public String getname() {
+        return name;
+    }
+    public void setage(int age){
+        this.age = age;
+    }
+    public int getage() {
+        return age;
+    }
+    public void setbreed(String breed){
+        this.breed = breed;
+    }
+    public String getbreed() {
+        return breed;
+    }
 
+    public void setweight(int weight){
+        this.weight = weight;
+    }
+    public int getweight() {
+        return weight;
+    }
 
+    public void setgender(String gender){
+        this.gender = gender;
+    }
+    public String getgender() {
+        return gender;
+    }
+    public void setsize(String size){
+        this.size = size;
+    }
+    public String getsize() {
+        return size;
+    }
+    public void setcolor(String color){
+        this.color = color;
+    }
+    public String getcolor() {
+        return color;
+    }
+
+    public void sethealth_level(String health_level){
+        this.health_level = health_level;
+    }
+    public int gethealth_level() {
+        return health_level;
+    }
 
     public void eat(){
         System.out.println("Eating food...");
