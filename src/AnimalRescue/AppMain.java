@@ -10,8 +10,9 @@ public class AppMain {
     Rocky.setgender("Male");
     Rocky.setsize("Small");
     Rocky.setcolor("White");
-    Rocky.sethealth_level("8");
-
+    Rocky.sethealth_level(8);
+    Rocky.setfavorite_food("Royal Canin");
+    Rocky.setrecreational_activity("walk in the Park");
 
         System.out.println("The dog name is: " + Rocky.getname());
         System.out.println("The dog age is: " + Rocky.getage() + " years");
@@ -21,12 +22,8 @@ public class AppMain {
         System.out.println("The dog gender is: " + Rocky.getgender());
         System.out.println("The dog color is: " + Rocky.getcolor());
         System.out.println("The dog level of health is: " + Rocky.gethealth_level());
-        System.out.println("The dog favorite recreational activity is: " + Rocky.getRecreational_activity);
-        Rocky.getRun();
-        Rocky.getEat();
-        Rocky.getSpeak();
-        Rocky.getSleep();
-        Rocky.getPlay();
+        System.out.println("The dog favorite food is: " + Rocky.getfavorite_food());
+        System.out.println("The dog favorite recreational activity is: " + Rocky.getrecreational_activity());
 
 
     }

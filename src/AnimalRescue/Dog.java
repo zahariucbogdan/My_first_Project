@@ -8,10 +8,9 @@ public class Dog {
     private String gender;
     private String size;
     private String color ;
-    private String health_level;
-
-    String favorite_food = "Royal Canin";
-    String recreational_activity = "Park walk";
+    private int health_level;
+    private String favorite_food ;
+    private String recreational_activity ;
 
 
     public void setname(String name){
@@ -59,26 +58,23 @@ public class Dog {
         return color;
     }
 
-    public void sethealth_level(String health_level){
+    public void sethealth_level(int health_level){
         this.health_level = health_level;
     }
     public int gethealth_level() {
         return health_level;
     }
+    public void setfavorite_food(String favorite_food){
+        this.favorite_food = favorite_food;
+    }
+    public String getfavorite_food() {
+        return favorite_food;
+    }
+    public void setrecreational_activity(String recreational_activity){
+        this.recreational_activity = recreational_activity;
+    }
+    public String getrecreational_activity() {
+        return recreational_activity;
+    }
 
-    public void eat(){
-        System.out.println("Eating food...");
-    }
-    public void sleep(){
-        System.out.println("Snorrinnnggg  zzzzz....zzzz...");
-    }
-    public void run(){
-        System.out.println("running... fast");
-    }
-    public void speak(){
-        System.out.println("Woof woof woof !!!...");
-    }
-    public void play(){
-        System.out.println("yeeaaaayyy let¨s play !!!...");
-    }
 }
