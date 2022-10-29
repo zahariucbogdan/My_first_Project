@@ -1,5 +1,14 @@
 package AnimalRescue;
 
 public class Recreational_Activity {
-    String name = "Walk in the park";
+
+   private String name;
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+
 }

@@ -38,7 +38,6 @@ public class Dog {
     public double getWeight() {
         return weight;
     }
-
     public void setGender(String gender){
         this.gender = gender;
     }
@@ -57,7 +56,6 @@ public class Dog {
     public String getColor() {
         return color;
     }
-
     public void setHealth_level(int health_level){
         this.health_level = health_level;
     }
@@ -71,8 +69,7 @@ public class Dog {
         return favorite_food;
     }
     public void setRecreational_activity(String recreational_activity){
-        this.recreational_activity = recreational_activity;
-    }
+        this.recreational_activity = recreational_activity;}
     public String getRecreational_activity() {
         return recreational_activity;
     }
