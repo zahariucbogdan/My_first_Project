@@ -79,7 +79,7 @@ public class Main {
             //if the text input is "FastTrack", print: "Learning comparison", if not, print :"Got to try more"
             LogicalOperation op = new LogicalOperation();
             String textInput = "FastTrack";
-            System.out.println(op.textComp(textInput));
+            System.out.println(op.returnTextNumber(textInput));
 
 
             // compare 2 numbers, get the greater number
@@ -98,12 +98,15 @@ public class Main {
             System.out.println(op.textAndNumberComparison(textInput2, numberInput));
 
 
-
-
         }
 
 
     }
+
+
+    Calculator calc = new Calculator();
+
+
 }
 
 
