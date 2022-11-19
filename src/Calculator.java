@@ -1,4 +1,6 @@
 public class Calculator {
+
+    Calculator calc = new Calculator();
     public static void main(String[] args) {
         System.out.println(123 + 234);
         System.out.println(75 / 3);

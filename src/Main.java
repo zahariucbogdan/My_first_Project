@@ -67,44 +67,23 @@ public class Main {
             System.out.println("Your speed in km/h is " + kph);
             System.out.println("Your speed in miles/h is " + mph);
 
-
         }
-
 
     }
 
-
-    public static class main {
-        public static void main(String[] args) {
+    public class main {
+        public void main(String[] args) {
             //if the text input is "FastTrack", print: "Learning comparison", if not, print :"Got to try more"
             LogicalOperation op = new LogicalOperation();
             String textInput = "FastTrack";
             System.out.println(op.returnTextNumber(textInput));
 
-
-            // compare 2 numbers, get the greater number
-            int first = 5;
-            int second = 7;
-            System.out.println(op.getGreaterNumber(first, second));
-
-
-            //Given a text input and a number input,if the text is equal to "FastTrack" AND the number is
-            //equal to or lower than 5, print the number and the text, in this order. If the text is not "FastTrack"
-            //AND the number is equal to or higher than 7, print the number&text in this order.
-
-            String textInput2 = "FastTrack";
-            int numberInput = 5;
-
-            System.out.println(op.textAndNumberComparison(textInput2, numberInput));
-
-
         }
-
 
     }
 
 
-    Calculator calc = new Calculator();
+
 
 
 }
